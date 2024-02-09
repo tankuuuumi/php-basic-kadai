@@ -6,9 +6,9 @@
         <div class="image_header">
           <div class="header_info">
             <?php
-            $cat = get/the_category();
+            $cat = get_the_category();
             $catslug = $cat[0]->slug;
-            $catslug = $cat[0]->cat_name;
+            $catname = $cat[0]->cat_name;
             ?>
             <div><?php echo $catslug; ?></div>
             <div><?php echo $catname; ?></div>
@@ -97,4 +97,4 @@
       </div>
     </div>
 
-    <?php get_footer(); ?>
+    <?php get_footer( ); ?>
