@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: イベント投稿ページ
+Template Name: 卒業生の声
 Template Post Type: post
 */
 ?>
@@ -41,18 +41,6 @@ Template Post Type: post
                 <div class="tab_panel_content">
                   <div class="tab_panel_text">
                     <div class="news_posts_small">
-                      <div class="row">
-                        <div class="col-lg-2 col-md-2 col-sx-12">
-                          <div class="calendar_news_border">
-                            <div class="calendar_news_border_1">
-                              <div class="calendar_month"><?php echo post_custom('month'); ?></div>
-                              <div class="calendar_day">
-                                <span><?php echo post_custom('day'); ?></span><span>日</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="calendar_hour"><?php echo post_custom('time'); ?></div>
-                        </div>
                         <div class="col-lg-10 col-md-10 col-sx-12">
                           <div class="news_post_small_header">
                             <img src="<?php echo get_template_directory_uri();?>/images/tags-solid.png" alt=""/><?php echo $catname; ?>
@@ -63,18 +51,9 @@ Template Post Type: post
                           <div class="news_time">
                             <div>
                               <img src="<?php echo get_template_directory_uri();?>/images/clock-regular.png" alt="" />
-                              <span>日付 : <?php echo post_custom('date');?></span>
+                              <span>卒業年: <?php echo post_custom('graduate-year');?></span>
                             </div>
-                            <div>
-                              <img src="<?php echo get_template_directory_uri(); ?>/imges/yen_sign-solid.png" alt="" />
-                              <span>参加費：<?php 
-                                  if(post_custom('fee')== 0){
-                                    echo '無料';
-                                  } else {
-                                    echo '¥' . number_format(post_custom('fee'));
-                                  }
-                                  ?></span>
-                            </div>
+                            
                           </div>
                           <div class="news_post_meta">
                             <?php the_content(); ?>
