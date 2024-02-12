@@ -50,8 +50,7 @@ Template Post Type: post
                           </div>
                           <div class="news_time">
                             <div>
-                              <img src="<?php echo get_template_directory_uri();?>/images/clock-regular.png" alt="" />
-                              <span>卒業年: <?php echo post_custom('graduate-year');?></span>
+                              <span>卒業年: <?php echo post_custom('graduate_year');?></span>
                             </div>
                             
                           </div>
